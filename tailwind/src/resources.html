@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - INVEST MCMM</title>
+    <meta name="description" content="Access tools, guides, and resources for implementing micro-credentials in your institution.">
+    <link rel="icon" href="../assets/logo_invest_main_v2.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind custom configuration
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3B82F6',
+              secondary: '#1E40AF',
+              accent: '#93C5FD',
+              'accent-light': '#EFF6FF',
+              'accent-dark': '#1E3A8A',
+              'light-bg': '#F3F4F6',
+              'text-primary': '#1F2937',
+              'background': '#F9FAFB',
+              'text-secondary': '#4B5563'
+            },
+            maxWidth: {
+              'container': '1200px'
+            },
+            transitionProperty: {
+              'normal': 'all'
+            },
+            transitionDuration: {
+              'fast': '150ms'
+            },
+            height: {
+              'header': '80px'
+            },
+            padding: {
+              'md': '1.25rem',
+              'lg': '2rem'
+            },
+            margin: {
+              'lg': '2rem',
+              'xl': '4rem'
+            },
+            gap: {
+              'sm': '0.5rem',
+              'lg': '2rem',
+              'xl': '4rem'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="../js/app.js" defer></script>
+</head>
+<body class="font-sans text-text-primary bg-background">
+    <div class="flex flex-col min-h-screen">
+        <!-- Skip Link for Accessibility -->
+        <a href="#main-content" class="absolute top-[-40px] left-0 bg-primary text-white p-2 z-50 focus:top-0 transition-all duration-300">
+            Skip to main content
+        </a>
+
+        <!-- Header -->
+        <header class="fixed w-full top-0 z-[1000] bg-white shadow-md">
+            <div class="flex justify-between items-center p-5 md:flex-row flex-col">
+                <a href="index.html">
+                    <img src="../assets/logo_invest_main_v2.png" alt="INVEST MCMM Logo" 
+                         class="w-[120px] hover:scale-105 transition-normal">
+                </a>
+                <nav class="navbar mt-2.5" aria-label="Main Navigation">
+                    <ul class="flex gap-5 list-none p-0 m-0 md:flex-row flex-col text-center">
+                        <li><a href="index.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">About</a></li>
+                        <li><a href="assessment.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Assessment</a></li>
+                        <li><a href="resources.html" class="text-primary font-semibold px-4 py-2 rounded-md bg-secondary text-white transition-normal">Resources</a></li>
+                        <li><a href="contact.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content" class="pt-header">
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-r from-primary to-accent-dark text-white py-16 text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-black/20"></div>
+                <div class="max-w-container mx-auto px-md relative z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6" data-animate="true">Resources & Tools</h1>
+                    <p class="text-xl max-w-2xl mx-auto opacity-90 mb-12" data-animate="true">
+                        Everything you need to implement and evaluate micro-credentials in your institution
+                    </p>
+                    <!-- Source Attribution -->
+                    <div class="inline-block px-6 py-3 transition-all duration-300" data-animate="true">
+                        <p class="text-white flex items-center gap-3 italic">
+                            <span>Based on research published in</span>
+                            <a href="https://www.mdpi.com/2813-4346/3/3/30" 
+                               class="text-accent-light hover:text-white underline decoration-2 underline-offset-4 transition-colors"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                MDPI Digital • Special Issue on Micro-Credentials
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction Section -->
+            <section class="py-16 bg-gradient-to-br from-accent-light via-white to-accent-light">
+                <div class="max-w-container mx-auto px-md">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-primary mb-6" data-animate="true">Comprehensive Resources</h2>
+                        <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-12" data-animate="true">
+                            Empowering higher education institutions with tools and guidance for excellence in micro-credential implementation
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Guidance Card -->
+                        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300" data-animate="true">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-4">Strategic Guidance</h3>
+                            <p class="text-text-secondary text-center">
+                                Expert guidance for developing and implementing effective micro-credential strategies aligned with institutional goals.
+                            </p>
+                        </div>
+
+                        <!-- Tools Card -->
+                        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300" data-animate="true">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                    <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-4">Practical Tools</h3>
+                            <p class="text-text-secondary text-center">
+                                Ready-to-use templates, assessment frameworks, and quality assurance tools for seamless implementation.
+                            </p>
+                        </div>
+
+                        <!-- Support Card -->
+                        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300" data-animate="true">
+                            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-accent-dark" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 16h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 11.9 13 12.5 13 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-4">Ongoing Support</h3>
+                            <p class="text-text-secondary text-center">
+                                Continuous guidance, best practices updates, and expert support throughout your micro-credential journey.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center" data-animate="true">
+                        <a href="#resources" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-semibold">
+                            Explore All Resources
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resource Categories -->
+            <section id="resources" class="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
+                <div class="max-w-container mx-auto px-md">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold mb-6" data-animate="true">Resource Categories</h2>
+                        <p class="text-xl text-text-secondary max-w-2xl mx-auto" data-animate="true">
+                            Explore our comprehensive collection of resources designed to support every aspect of micro-credential development
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Implementation & Planning -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Implementation & Planning</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Comprehensive guides and frameworks for program planning and curriculum design. Access tools to build effective micro-credential programs.</p>
+                                <a href="#" class="text-primary group-hover:text-secondary font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Assessment & Quality -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-secondary to-accent-dark rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                        <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Assessment & Quality</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Tools and frameworks for ensuring high-quality micro-credential programs. Access assessment rubrics and quality standards.</p>
+                                <a href="#" class="text-secondary group-hover:text-accent-dark font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Technology & Infrastructure -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-accent to-primary rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-accent-dark" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Technology & Infrastructure</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Digital solutions and infrastructure guidelines for program delivery. Implementation tools for technical setup and management.</p>
+                                <a href="#" class="text-accent-dark group-hover:text-primary font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Research & Best Practices -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Research & Best Practices</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Evidence-based insights and successful implementation examples. Case studies and research findings from leading institutions.</p>
+                                <a href="#" class="text-primary group-hover:text-accent font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Policy & Standards -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-secondary to-primary rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Policy & Standards</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Regulatory guidelines and standards for program compliance. Resources for aligning with European qualification frameworks.</p>
+                                <a href="#" class="text-secondary group-hover:text-primary font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Stakeholder Engagement -->
+                        <div class="group relative" data-animate="true">
+                            <div class="absolute inset-0 bg-gradient-to-r from-accent-dark to-secondary rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                                <div class="w-12 h-12 bg-accent-dark/10 rounded-lg flex items-center justify-center mb-6">
+                                    <svg class="w-6 h-6 text-accent-dark" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Stakeholder Engagement</h3>
+                                <p class="text-text-secondary mb-6 min-h-[3rem]">Tools for building effective partnerships and communication. Resources for engaging employers, learners, and stakeholders.</p>
+                                <a href="#" class="text-accent-dark group-hover:text-secondary font-semibold inline-flex items-center mt-auto">
+                                    View Resources
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="max-w-container mx-auto px-md">
+                <!-- Featured Resources Grid -->
+                <section class="py-16 bg-white">
+                    <div class="max-w-container mx-auto px-md">
+                        <h2 class="text-3xl font-bold text-center mb-10" data-animate="true">Featured Resources</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Implementation Guide Card -->
+                            <!-- Implementation & Planning Guide -->
+                            <article class="group bg-white rounded-xl overflow-hidden shadow-lg transition-normal hover:-translate-y-2 hover:shadow-xl" data-category="documentation" data-animate="true">
+                                <div class="relative overflow-hidden">
+                                    <div class="bg-gradient-to-br from-primary to-secondary aspect-[4/3] flex items-center justify-center p-8">
+                                        <svg class="w-20 h-20 text-white/90" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-normal">Implementation Toolkit</h3>
+                                    <p class="text-text-secondary mb-4">
+                                        Complete toolkit including planning templates, curriculum frameworks, and step-by-step implementation guides.
+                                    </p>
+                                    <a href="#" class="inline-flex items-center text-primary font-semibold group-hover:text-secondary transition-normal">
+                                        Access Toolkit
+                                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Quality Framework -->
+                            <article class="group bg-white rounded-xl overflow-hidden shadow-lg transition-normal hover:-translate-y-2 hover:shadow-xl" data-category="quality" data-animate="true">
+                                <div class="relative overflow-hidden">
+                                    <div class="bg-gradient-to-br from-secondary to-accent-dark aspect-[4/3] flex items-center justify-center p-8">
+                                        <svg class="w-20 h-20 text-white/90" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-normal">Quality Framework</h3>
+                                    <p class="text-text-secondary mb-4">
+                                        Comprehensive quality assurance framework including assessment rubrics and validation tools.
+                                    </p>
+                                    <a href="#" class="inline-flex items-center text-primary font-semibold group-hover:text-secondary transition-normal">
+                                        Explore Framework
+                                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Digital Infrastructure Guide -->
+                            <article class="group bg-white rounded-xl overflow-hidden shadow-lg transition-normal hover:-translate-y-2 hover:shadow-xl" data-category="technology" data-animate="true">
+                                <div class="relative overflow-hidden">
+                                    <div class="bg-gradient-to-br from-accent to-primary aspect-[4/3] flex items-center justify-center p-8">
+                                        <svg class="w-20 h-20 text-white/90" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-normal">Digital Infrastructure Guide</h3>
+                                    <p class="text-text-secondary mb-4">
+                                        Technical specifications and guidelines for setting up digital infrastructure for micro-credentials.
+                                    </p>
+                                    <a href="#" class="inline-flex items-center text-primary font-semibold group-hover:text-secondary transition-normal">
+                                        View Guide
+                                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-normal" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Downloads Section -->
+                <section class="py-16 bg-gradient-to-br from-accent-light to-white">
+                    <div class="max-w-container mx-auto px-md">
+                        <div class="text-center mb-12" data-animate="true">
+                            <h2 class="text-3xl font-bold mb-4">Downloadable Resources</h2>
+                            <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                                Access our comprehensive collection of templates, forms, and research materials
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Templates & Forms -->
+                            <div class="bg-white rounded-xl shadow-lg p-8" data-animate="true">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-bold">Templates & Forms</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-template="planning">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-primary transition-normal">Program Planning Template</h4>
+                                                <p class="text-sm text-text-secondary">Structured template for planning your micro-credential programs</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-template="assessment">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-primary transition-normal">Assessment Rubrics</h4>
+                                                <p class="text-sm text-text-secondary">Standardized rubrics for evaluating micro-credentials</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-template="quality">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-primary transition-normal">Quality Assurance Checklist</h4>
+                                                <p class="text-sm text-text-secondary">Comprehensive checklist for maintaining quality standards</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Research & Reports -->
+                            <div class="bg-white rounded-xl shadow-lg p-8" data-animate="true">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-bold">Research & Reports</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-report="state">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-secondary transition-normal">State of Micro-credentials Report</h4>
+                                                <p class="text-sm text-text-secondary">Comprehensive analysis of current trends and statistics</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-report="impact">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-secondary transition-normal">Impact Assessment Study</h4>
+                                                <p class="text-sm text-text-secondary">Research on the effectiveness of micro-credentials</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" 
+                                       class="group block bg-accent-light/50 p-4 rounded-lg hover:bg-accent-light transition-normal"
+                                       data-report="trends">
+                                        <div class="flex items-start gap-4">
+                                            <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                                                <svg class="w-4 h-4 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold mb-1 group-hover:text-secondary transition-normal">Future Trends Analysis</h4>
+                                                <p class="text-sm text-text-secondary">Insights into emerging trends and future directions</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white text-center">
+                    <div class="max-w-container mx-auto px-md">
+                        <h2 class="text-3xl font-bold mb-6" data-animate="true">Ready to Get Started?</h2>
+                        <p class="text-xl max-w-2xl mx-auto mb-8 opacity-90" data-animate="true">
+                            Access our comprehensive tools and resources to enhance your micro-credential programs.
+                        </p>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center" data-animate="true">
+                            <a href="assessment.html" class="px-8 py-3 bg-white text-primary rounded-md font-bold transition-normal hover:-translate-y-1 hover:shadow-lg">
+                                Start Assessment
+                            </a>
+                            <a href="#" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-md font-bold transition-normal hover:-translate-y-1 hover:shadow-lg hover:bg-white/10">
+                                Download Resources
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-accent-dark text-white py-10 px-5 mt-auto">
+            <div class="max-w-container mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-10">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Quick Links</h3>
+                        <ul class="list-none flex flex-col items-center md:items-start gap-2">
+                            <li><a href="index.html" class="text-white/80 hover:text-white hover:underline transition-fast">Home</a></li>
+                            <li><a href="about.html" class="text-white/80 hover:text-white hover:underline transition-fast">About</a></li>
+                            <li><a href="assessment.html" class="text-white/80 hover:text-white hover:underline transition-fast">Assessment</a></li>
+                            <li><a href="resources.html" class="text-white/80 hover:text-white hover:underline transition-fast">Resources</a></li>
+                            <li><a href="contact.html" class="text-white/80 hover:text-white hover:underline transition-fast">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Latest Updates</h3>
+                        <ul class="list-none flex flex-col items-center md:items-start gap-2">
+                            <li class="text-white/80">New case studies added</li>
+                            <li class="text-white/80">Assessment tool updated</li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Follow Us</h3>
+                        <div class="flex justify-center md:justify-start gap-5">                            <a href="https://www.linkedin.com/company/invest-mcmm" 
+                               class="inline-flex items-center justify-center bg-white/10 p-2 rounded-full transition-normal hover:bg-white/20 hover:-translate-y-0.5"
+                               aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/circle-linkedin-512.webp" alt="LinkedIn" class="w-8 h-8">
+                            </a>
+                            <a href="https://twitter.com/invest_mcmm"
+                               class="inline-flex items-center justify-center bg-white/10 p-2 rounded-full transition-normal hover:bg-white/20 hover:-translate-y-0.5"
+                               aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/x.webp" alt="Twitter" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-5 border-t border-white/10 text-white/80 text-sm">
+                    <p>&copy; 2024-2025 INVEST MCMM. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Animation Script -->
+    <script>
+        // Animation observer
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all animatable elements
+            document.querySelectorAll('[data-animate="true"]').forEach((element, index) => {
+                // Add slight delay based on index for cascade effect
+                const delay = index * 50; // 50ms between each element
+                element.style.transitionDelay = `${delay}ms`;
+                element.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

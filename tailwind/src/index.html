@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVEST MCMM Assessment Tool</title>
+    <meta name="description" content="INVEST MCMM: Enhance micro-credential programs in European Higher Education. Assessment tools, resources, and news for institutions.">
+    <link rel="icon" href="../assets/logo_invest_main_v2.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind custom configuration
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3B82F6',
+              secondary: '#1E40AF',
+              accent: '#93C5FD',
+              'accent-light': '#EFF6FF',
+              'accent-dark': '#1E3A8A',
+              'light-bg': '#F3F4F6',
+              'text-primary': '#1F2937',
+              'background': '#F9FAFB',
+              'text-secondary': '#4B5563'
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'spin-reverse': 'spin 15s linear infinite reverse',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+            },
+            keyframes: {
+              'spin': {
+                '0%': { transform: 'rotate(0deg)' },
+                '100%': { transform: 'rotate(360deg)' }
+              }
+            },
+            maxWidth: {
+              'container': '1200px'
+            },
+            transitionProperty: {
+              'normal': 'all'
+            },
+            transitionDuration: {
+              'fast': '150ms'
+            },
+            height: {
+              'header': '80px'
+            },
+            padding: {
+              'sm': '0.75rem',
+              'md': '1.25rem',
+              'lg': '2rem'
+            },
+            margin: {
+              'lg': '2rem',
+              'xl': '4rem'
+            },
+            gap: {
+              'sm': '0.5rem',
+              'lg': '2rem',
+              'xl': '4rem'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body class="font-sans text-text-primary bg-accent/10 overflow-x-hidden leading-relaxed">
+    <div class="flex flex-col min-h-screen">
+        <!-- Skip Link for Accessibility -->
+        <a href="#main-content" class="absolute top-[-40px] left-0 bg-primary text-white p-2 z-50 focus:top-0 transition-all duration-300">
+            Skip to main content
+        </a>
+
+        <!-- Header -->
+        <header class="fixed w-full top-0 z-[1000] bg-white shadow-md">
+            <div class="flex justify-between items-center p-5 md:flex-row flex-col">
+                <a href="index.html">
+                    <img src="../assets/logo_invest_main_v2.png" alt="INVEST MCMM Logo" 
+                         class="w-[120px] hover:scale-105 transition-normal">
+                </a>
+                <nav class="navbar mt-2.5" aria-label="Main Navigation">
+                    <ul class="flex gap-5 list-none p-0 m-0 md:flex-row flex-col text-center">
+                        <li><a href="index.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">About</a></li>
+                        <li><a href="assessment.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Assessment</a></li>
+                        <li><a href="resources.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Resources</a></li>
+                        <li><a href="contact.html" class="text-primary font-semibold px-4 py-2 rounded-md transition-normal hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-secondary pt-[100px]" id="home">
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                </div>
+            </div>
+
+            <div class="relative container mx-auto px-4 z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left content -->
+                    <div class="text-left space-y-8">
+                        <div class="space-y-4">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                                Transform Your
+                                <span class="inline-block relative">
+                                    Micro-Credential
+                                    <span class="absolute bottom-1 left-0 w-full h-2 bg-accent/50 -skew-x-12"></span>
+                                </span>
+                                Journey
+                            </h1>
+                            <p class="text-xl text-white/90 leading-relaxed max-w-xl">
+                                Evaluate and enhance your institution's micro-credential implementation through our comprehensive maturity model
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#assessment" 
+                               class="group inline-flex items-center px-6 py-3 text-lg font-semibold bg-white text-primary rounded-lg hover:-translate-y-1 transition-all duration-300 hover:shadow-xl">
+                                Start Assessment
+                                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                            <a href="about.html" 
+                               class="inline-flex items-center px-6 py-3 text-lg font-semibold border-2 border-white text-white rounded-lg hover:bg-white/10 hover:-translate-y-1 transition-all duration-300">
+                                Learn More
+                            </a>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
+                            <div>
+                                <div class="text-3xl font-bold text-white">200+</div>
+                                <div class="text-white/80">Institutions</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white">15+</div>
+                                <div class="text-white/80">Countries</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white">1000+</div>
+                                <div class="text-white/80">Assessments</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right content - Animated geometric elements -->
+                    <div class="hidden lg:block relative">
+                        <!-- Geometric shapes with gradient backgrounds -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]">
+                            <!-- Main circle -->
+                            <div class="absolute inset-0 border-4 border-white/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                            
+                            <!-- Inner shapes -->
+                            <div class="absolute inset-8 border-4 border-white/15 rounded-full animate-[spin_15s_linear_infinite_reverse]">
+                                <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full"></div>
+                                <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full"></div>
+                            </div>
+                            
+                            <!-- Outer shapes -->
+                            <div class="absolute inset-16 border-4 border-white/10 rounded-full animate-[spin_25s_linear_infinite]">
+                                <div class="absolute top-1/2 -left-2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
+                                <div class="absolute top-1/2 -right-2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
+                            </div>
+
+                            <!-- Floating dots -->
+                            <div class="absolute top-0 left-1/4 w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                            <div class="absolute bottom-0 right-1/4 w-2 h-2 bg-white rounded-full animate-pulse" style="animation-delay: 1s"></div>
+                            <div class="absolute top-1/4 right-0 w-2 h-2 bg-accent rounded-full animate-pulse" style="animation-delay: 0.5s"></div>
+                            <div class="absolute bottom-1/4 left-0 w-2 h-2 bg-accent rounded-full animate-pulse" style="animation-delay: 1.5s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Framework Section -->
+        <section class="py-24 bg-gradient-to-br from-gray-50 to-white" id="framework" data-animate="true">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Assessment Framework</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        A comprehensive approach to evaluating and improving micro-credential implementation
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Instructional Design Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 
+                                transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="../assets/framework.png" alt="Instructional Design" class="w-10 h-10">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Instructional Design</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Learning outcomes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Assessment criteria</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Pedagogical approaches</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Quality Assurance Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 
+                                transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="../assets/benchmarking.png" alt="Quality Assurance" class="w-10 h-10">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Quality Assurance</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Standards compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Review processes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Continuous improvement</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Stackability Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 
+                                transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="../assets/focus.png" alt="Stackability" class="w-10 h-10">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Stackability</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Credit recognition</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Pathway integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Credential pathways</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Implementation Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 
+                                transform hover:-translate-y-2 border border-gray-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="../assets/improvement.webp" alt="Implementation" class="w-10 h-10">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Implementation</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Infrastructure</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Stakeholder engagement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                </svg>
+                                <span>Sustainability planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment Form Section -->
+        <section class="py-15 px-5 bg-white my-5" id="assessment" data-animate="true">
+            <h2 class="text-3xl text-center mb-10">Begin Your Assessment</h2>
+            <div id="formMessage" class="hidden mb-5 p-4 rounded-md bg-accent border-l-4 border-primary font-medium"></div>
+            <form id="participantForm" class="max-w-[600px] mx-auto p-[30px] bg-white rounded-md shadow-lg">
+                <div class="mb-5">
+                    <label for="institutionName" class="block mb-2 font-semibold">Institution Name:</label>
+                    <input type="text" id="institutionName" name="institutionName" required
+                           class="w-full p-3 border border-gray-300 rounded-md text-base transition-normal 
+                                  focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/25">
+                </div>
+                
+                <div class="mb-5">
+                    <label for="microCredentials" class="block mb-2 font-semibold">Does your institution offer or plan to offer micro-credentials?</label>
+                    <select id="microCredentials" name="microCredentials" required
+                            class="w-full p-3 border border-gray-300 rounded-md text-base transition-normal
+                                   focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/25">
+                        <option value="">Please select...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="planning">Planning to offer</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="startBtn" 
+                        class="w-full bg-primary text-white px-6 py-3 rounded-md font-semibold transition-normal 
+                               hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed">
+                    Start Assessment
+                </button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-accent-dark text-white py-10 px-5 mt-auto">
+            <div class="max-w-container mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-10">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Quick Links</h3>
+                        <ul class="list-none flex flex-col items-center md:items-start gap-2">
+                            <li><a href="index.html" class="text-white/80 hover:text-white hover:underline transition-fast">Home</a></li>
+                            <li><a href="about.html" class="text-white/80 hover:text-white hover:underline transition-fast">About</a></li>
+                            <li><a href="assessment.html" class="text-white/80 hover:text-white hover:underline transition-fast">Assessment</a></li>
+                            <li><a href="resources.html" class="text-white/80 hover:text-white hover:underline transition-fast">Resources</a></li>
+                            <li><a href="contact.html" class="text-white/80 hover:text-white hover:underline transition-fast">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Latest Updates</h3>
+                        <ul class="list-none flex flex-col items-center md:items-start gap-2">
+                            <li class="text-white/80">New case studies added</li>
+                            <li class="text-white/80">Assessment tool updated</li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl mb-5">Follow Us</h3>
+                        <div class="flex justify-center md:justify-start gap-5">
+                            <a href="https://www.linkedin.com/company/invest-mcmm" 
+                               class="inline-flex items-center justify-center bg-white/10 p-2 rounded-full transition-normal hover:bg-white/20 hover:-translate-y-0.5"
+                               aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/circle-linkedin-512.webp" alt="LinkedIn" class="w-8 h-8">
+                            </a>
+                            <a href="https://twitter.com/invest_mcmm"
+                               class="inline-flex items-center justify-center bg-white/10 p-2 rounded-full transition-normal hover:bg-white/20 hover:-translate-y-0.5"
+                               aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/x.webp" alt="Twitter" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-5 border-t border-white/10 text-white/80 text-sm">
+                    <p>&copy; 2024-2025 INVEST MCMM. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Animation Script -->
+    <script>
+        // Animation observer
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all animatable elements
+            document.querySelectorAll('[data-animate="true"]').forEach((element, index) => {
+                // Add slight delay based on index for cascade effect
+                const delay = index * 50; // 50ms between each element
+                element.style.transitionDelay = `${delay}ms`;
+                element.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
